@@ -1,3 +1,5 @@
+sudo apt update
+sudo apt install git
 sudo apt-get install jq
 
 # You may change the branch here
@@ -21,3 +23,5 @@ gnome-terminal --tab -- ./wasp
 # Wait and request for funds 
 sleep 30s
 ./wasp-cli request-funds
+xdg-open http://localhost:7000
+
