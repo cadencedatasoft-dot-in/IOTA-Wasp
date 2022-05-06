@@ -1,4 +1,4 @@
-# Single node IOTA WASP - Just run the script
+# Script to launch - Single node IOTA WASP
 This script frees up QA/Developers from the task of setting up, configuring, preparing and running WASP node.
 
 ### Ubuntu users use: runwaspnode.sh 
