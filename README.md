@@ -1,4 +1,28 @@
-This document is for reference only, prefer to read runwaspnode.sh file
+# Single node IOTA WASP - Just run the script
+This script frees up QA/Developers from the task of setting up, configuring, preparing and running WASP node.
+
+### Ubuntu users use: runwaspnode.sh 
+### Mac users use: runwaspnodemac.sh 
+
+
+# Features
+ - Automatically install and run wasp node.
+ - Creates seed, configures wasp-cli.json and config.json files
+ - Starts Wasp node
+ - Launches browser to connect with the running WASP node
+
+# Prerequisites
+This plugin expects the following packages are already installed on your machine.
+ - git
+ - build-essentials
+ - go
+ - rust toolchain
+ - node
+ 
+ This document is for reference only, prefer to read runwaspnode.sh or runwaspnodemac.sh file
+
+ ----------
+ 
 
 //Getting wasp node working with external goshimmer node - run following steps in Ubuntu terminal
 git clone --branch v0.2.5 https://github.com/iotaledger/wasp.git
