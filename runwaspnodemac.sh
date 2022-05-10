@@ -17,7 +17,11 @@ jq '.nodeconn.address = "goshimmer.sc.iota.org:5000"' config.json > tmp.$$.json 
 
 # Start wasp node in new tab
 cwd=$(pwd)
-osascript -e 'tell app "Terminal" to do script "cd '$cwd'; sudo ./wasp"'
+osascript -e "tell application \"Terminal\" 
+    reopen 
+    activate 
+    do script \"cd $cwd ; ./wasp \"
+end tell"
 
 # Wait and request for funds 
 sleep 30s
